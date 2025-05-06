@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "ZKT2C4sch2C8-fW5a",
+        });
+    })();
+    </script>
+    <script src="./scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img class="logo" src="./imagens/spa_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png" alt="logo"></a>
+            <ul class="menu">
+                <li class="menu-list"><a href="./quemsomos.html">quem somos</a></li>
+                <li class="menu-list"><a href="./localização.html">localização</a></li>
+                <li class="menu-list"><a href="./preço.html">preço</a></li>
+                <li class="menu-list"><a href="./contato.html">contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="principal-contato">
+        <h1>informaçoes de contato</h1>
+        <ul class="informaçoes">
+            <li class="informaçoes-list">numero do whatsapp</li>
+            <li class="informaçoes-list">e-mail</li>
+        </ul>
+        <div class="formulario">
+            <form>
+                <input name="form_name" id="form_name" class="contato-nome" type="text" placeholder="nome">
+                <br>
+                <input type="email" name="form_email" id="form_email" class="contato-email" placeholder="e-mail">
+                <br>
+                <textarea name="form_message" id="form_message" class="contato-mensagem" rows="12" cols="100" placeholder="mensagem"></textarea>
+                <br>
+                <button type="button" class="contato-enviar" onclick="sendMail()">enviar</button>
+            </form>
+        </div>
+    </div>
+    <footer>        
+        <div class="redes-sociais">
+            <a href="#"><i class="fa-brands fa-facebook redes-sociais-size"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram redes-sociais-size"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
