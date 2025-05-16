@@ -5,6 +5,10 @@ function sendMail(){
         form_message : document.getElementById("form_message").value,
     }
 
+    if (document.getElementById("anon").checked){
+        parms.form_name = "anonimo"
+    }
+
     const email_checker = parms.form_email.split("@");
 
     if (parms.form_name == "" || parms.form_email == "" || parms.form_message == ""){
