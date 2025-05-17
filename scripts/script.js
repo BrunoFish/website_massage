@@ -19,6 +19,6 @@ function sendMail(){
         return;
     } else {
         emailjs.send("service_MassageEmail","template_contact",parms).then(alert("mensagem enviada com sucesso!"));
-        // location.reload();
+        setTimeout(function(){location.reload();}, 1000);
     }
 }
