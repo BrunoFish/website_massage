@@ -1,162 +1,294 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap');
 
-html, body {
-    font-family: "Open Sans", "poppins", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    min-height: 100vh;
+@media screen and (max-width: 5120px) {
+    html, body {
+        font-family: "Open Sans", "poppins", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+            "wdth" 100;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    header {
+        height: 100px;
+        background-color: #D9C4B8;
+    }
+
+    .logo {
+        margin: 0px 30px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: purple;
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: purple;
+    }
+
+    .principal {
+        margin: 0 30px;
+        flex:1;
+    }
+
+    .div-massagem {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .massage-descriptions {
+        align-self: start;
+    }
+
+    .principal-localização {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .principal-preço {
+        margin: 0 30px;
+        flex:1;
+    }
+
+    .principal-contato {
+        margin: 0 30px;
+        flex:1;
+    }
+
+    .principal-quemsomos {
+        margin: 0 30px;
+        flex:1;
+    }
+
+
+    h1, h2 {
+        margin: 20px;
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    div {
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu {
+        float: right;
+        margin: 60px 10px 0 0;
+        display: inline;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .menu-list {
+        display: inline;
+    }
+
+    footer {
+        height: 100px;
+        width: 100%;
+        background-color: #D9C4B8;
+        text-align: center;
+    }
+
+    .redes-sociais {
+        margin-top: 47px;
+    }
+
+    .contato-mensagem {
+        margin-top: 2px;
+    }
+
+    #form_message {
+        height: 12em;
+        width: 60em;
+    }
+
+    .contato-nome, .contato-email, .contato-mensagem, .contato-enviar {
+        margin-left: 20px;
+    }
+
+    .imagem-perfil {
+        margin-top: 10px;
+        margin-left: 7px;
+    }
+
+    .quemsomos-nome {
+        display: inline;
+    }
+
+    .div-localização-mapa {
+        /* justify-content: center; */
+        /* align-items: center; */
+        display: grid;
+        grid-template-columns: 250px 600px;
+        grid-template-rows: repeat(1, 1fr);
+        gap: 2px;
+    }
+
+
+    .div-localização {
+    }
+
+
+    .div-mapa {
+        flex: 2;
+    }
+
+    .div-mapa iframe {
+        width: 100%;
+        height: 450px;
+    }
+
+    .preços {
+        list-style: none;
+    }
+
+    .redes-sociais-size {
+        font-size: 49px;
+    }
 }
-header {
-    height: 100px;
-    background-color: #D9C4B8;
+
+@media (max-width: 860px) {
+    html, body {
+        font-size: 12px;
+        }
+    
+    header {
+        height: 200px;
+        background-color: #D9C4B8;
+    }
+    
+    .div-localização-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario {
+        margin-bottom: 10px;
+    }
+    
+    #form_message {
+        height: 10em;
+        width: 50em;
+    }    
 }
 
-.logo {
-    margin: 0px 30px;
+@media (max-width: 640px) {
+    html, body {
+        font-size: 12px;
+        }
+    
+    header {
+        height: 200px;
+        background-color: #D9C4B8;
+    }
+    
+    .div-localização-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario {
+        margin-bottom: 10px;
+    }
+    
+    #form_message {
+        height: 10em;
+        width: 20em;
+    }    
 }
 
-a {
-    color: black;
-    text-decoration: none;
+@media (max-width: 540px) {
+    html, body {
+        font-size: 12px;
+        }
+    
+    header {
+        height: 200px;
+        background-color: #D9C4B8;
+    }
+    
+    .div-localização-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario {
+        margin-bottom: 10px;
+    }
+    
+    #form_message {
+        height: 10em;
+        width: 30em;
+    }    
 }
 
-a:hover {
-    color: purple;
-    text-decoration: underline;
+@media (max-width: 430px) {
+    html, body {
+        font-size: 12px;
+        }
+    
+    header {
+        height: 200px;
+        background-color: #D9C4B8;
+    }
+    
+    .div-localização-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario {
+        margin-bottom: 10px;
+    }
+    
+    #form_message {
+        height: 10em;
+        width: 25em;
+    }    
 }
 
-a:visited {
-    color: purple;
-}
+@media (max-width: 375px) {
+    html, body {
+        font-size: 12px;
+        }
+    
+    header {
+        height: 200px;
+        background-color: #D9C4B8;
+    }
+    
+    .div-localização-mapa {
+        display: flex;
+        flex-direction: column;
+    }
 
-.principal {
-    margin: 0 30px;
-    flex:1;
-}
-
-.div-massagem {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-}
-
-.massage-descriptions {
-    align-self: start;
-}
-
-.principal-localização {
-    flex: 1;
-    padding: 20px;
-}
-
-.principal-preço {
-    margin: 0 30px;
-    flex:1;
-}
-
-.principal-contato {
-    margin: 0 30px;
-    flex:1;
-}
-
-.principal-quemsomos {
-    margin: 0 30px;
-    flex:1;
-}
-
-
-h1, h2 {
-    margin: 20px;
-}
-
-p {
-    margin: 10px;
-}
-
-div {
-}
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-.menu {
-    float: right;
-    margin: 60px 10px 0 0;
-    display: inline;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.menu-list {
-    display: inline;
-}
-
-footer {
-    height: 100px;
-    width: 100%;
-    background-color: #D9C4B8;
-    text-align: center;
-}
-
-.redes-sociais {
-    margin-top: 47px;
-}
-
-.contato-mensagem {
-    margin-top: 2px;
-}
-
-.contato-nome, .contato-email, .contato-mensagem, .contato-enviar {
-    margin-left: 20px;
-}
-
-.imagem-perfil {
-    margin-top: 10px;
-    margin-left: 7px;
-}
-
-.quemsomos-nome {
-    display: inline;
-}
-
-.div-localização-mapa {
-    /* justify-content: center; */
-    /* align-items: center; */
-    display: grid;
-    grid-template-columns: 250px 600px;
-    grid-template-rows: repeat(1, 1fr);
-    gap: 2px;
-}
-
-
-.div-localização {
-}
-
-
-.div-mapa {
-    flex: 2;
-}
-
-.div-mapa iframe {
-    width: 100%;
-    height: 450px;
-}
-
-.preços {
-    list-style: none;
-}
-
-.redes-sociais-size {
-    font-size: 49px;
+    .formulario {
+        margin-bottom: 10px;
+    }
+    
+    #form_message {
+        height: 10em;
+        width: 20em;
+    }    
 }
