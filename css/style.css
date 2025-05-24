@@ -14,9 +14,18 @@
         height: auto;
         min-height: 100vh;
     }
+
     header {
         height: 100px;
         background-color: #D9C4B8;
+    }
+
+    input {
+        outline: none;
+    }
+    
+    textarea {
+        all: unset;
     }
 
     .logo {
@@ -119,8 +128,19 @@
     }
 
     #form_message {
+        border: none;
+        border-radius: 10px;
+        resize: none;
+        box-shadow: 2px 2px 5px;
         height: 12em;
         width: 60em;
+    }
+
+    #form_name, #form_email {
+        border: none;
+        border-radius: 3px;
+        margin-bottom: 7px;
+        box-shadow: 2px 2px 5px;
     }
 
     .contato-nome, .contato-email, .contato-mensagem, .contato-enviar {
@@ -190,7 +210,7 @@
     #form_message {
         height: 10em;
         width: 50em;
-    }    
+    }
 }
 
 @media (max-width: 640px) {
