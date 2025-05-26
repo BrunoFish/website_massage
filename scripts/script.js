@@ -17,8 +17,10 @@ function sendMail(){
     } else if (email_checker.length != 2){
         alert("email invalido")
         return;
-    } else {
+    } else if (email_checker[1].split(".").length == 2 || email_checker[1].split(".").length == 3) {
         emailjs.send("service_MassageEmail","template_contact",parms).then(alert("mensagem enviada com sucesso!"));
         setTimeout(function(){location.reload();}, 1000);
+    } else {
+        alert("email invalido")
     }
 }

@@ -188,6 +188,31 @@
     }
 }
 
+@media (max-width: 912px) {
+    html, body {
+        font-size: 12px;
+        }
+    
+    header {
+        height: 200px;
+        background-color: #D9C4B8;
+    }
+    
+    .div-localização-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario {
+        margin-bottom: 10px;
+    }
+    
+    #form_message {
+        height: 10em;
+        width: 50em;
+    }
+}
+
 @media (max-width: 860px) {
     html, body {
         font-size: 12px;
