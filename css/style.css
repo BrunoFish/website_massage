@@ -67,6 +67,74 @@
         display: block;
     }
 
+    
+    #login-form {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: var(--color-secondary);
+        position: absolute;
+        top: 18%;
+        left: 45%;
+        margin-top: -50px;
+        margin-left: -50px;;
+        width: 320px;
+        height: 400px;
+    }
+
+    #login-title {
+        margin: 50px auto 5px auto;
+    }
+    #login-instructions {
+        margin: 10px auto;
+    }
+    
+    #username, #password {
+        margin: 10px auto;
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #username {
+        background-image: url(../imagens/at_image.png);
+        background-position: left;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+    }
+    
+    #password {
+        background-image: url(../imagens/lock_image.jpg);
+        background-position: left;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+    }
+
+    #login-form-button {
+        margin: 10px auto;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    
+    #login-button {
+        color: var(--color-quinary);
+        background-color: var(--color-primary);
+        position: fixed;
+        border-radius: 10px;
+        top: 40px;
+        left: 150px;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
     input {
         outline: none;
     }
