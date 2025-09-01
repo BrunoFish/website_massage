@@ -67,9 +67,11 @@
         display: block;
     }
 
+    .hide {
+        display: none !important;
+    }
     
     #login-form {
-        visibility: hidden;
         display: flex;
         flex-direction: column;
         border-radius: 20px;
@@ -86,18 +88,19 @@
     #login-title {
         margin: 50px auto 5px auto;
     }
+
     #login-instructions {
         margin: 10px auto;
     }
     
-    #username, #password {
+    .username, .password, .password-verification, .email, .nome {
         margin: 10px auto;
         width: 250px;
         height: 30px;
         border-radius: 10px;
     }
 
-    #username {
+    .username {
         background-image: url(../imagens/at_image.png);
         background-position: left;
         background-size: 20px 20px;
@@ -105,7 +108,7 @@
         text-indent: 20px;
     }
     
-    #password {
+    .password {
         background-image: url(../imagens/lock_image.jpg);
         background-position: left;
         background-size: 20px 20px;
@@ -113,7 +116,65 @@
         text-indent: 20px;
     }
 
+    .password-verification {
+        background-image: url(../imagens/lock_image.jpg);
+        background-position: left;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+    }
+
+    .email {
+        background-image: url(../imagens/at_image.png);
+        background-position: left;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+    }
+    
+    .nome {
+        background-image: url(../imagens/profile_image.png);
+        background-position: left;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        text-indent: 20px;
+    }
+
+    #link-cadastro {
+        cursor: pointer;
+        margin: 10px auto;
+    }
+
     #login-form-button {
+        margin: 10px auto;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+    }
+
+    #signup-form {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        background-color: var(--color-secondary);
+        position: absolute;
+        top: 18%;
+        left: 45%;
+        margin-top: -50px;
+        margin-left: -50px;;
+        width: 320px;
+        height: 450px;
+    }
+
+    #signup-title {
+        margin: 50px auto 5px auto;
+    }
+    
+    #signup-instructions {
+        margin: 10px auto;
+    }
+
+    #signup-form-button {
         margin: 10px auto;
         width: 100px;
         height: 30px;

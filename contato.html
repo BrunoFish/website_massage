@@ -18,15 +18,25 @@
     <script src="./scripts/script.js"></script>
     <script src="https://kit.fontawesome.com/73d6cb15bd.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./scripts/darkmode.js" defer></script>
-    <script src="./scripts/login-form.js" defer></script>
+    <script src="./scripts/login-forms.js" defer></script>
 </head>
 <body>
-    <div id="login-form">
+    <div id="login-form" class="hide">
         <h2 id="login-title">Login</h2>
         <p id="login-instructions">Insira seu nome de usuário e senha</p>
-        <input type="email" name="username" id="username" placeholder="nome de usuario ou email">
-        <input type="password" name="password" id="password" placeholder="senha">
+        <input type="email" name="username" class="username" placeholder="nome de usuario ou email">
+        <input type="password" name="password" class="password" placeholder="senha">
+        <p id="link-cadastro">não tem conta? clique aqui</p>
         <button type="button" id="login-form-button">Login</button>
+    </div>
+    <div id="signup-form" class="hide">
+        <h2 id="signup-title">Sign-up</h2>
+        <p id="signup-instructions">Insira os dados para criar sua conta</p>
+        <input type="email" name="email" class="email" placeholder="email">
+        <input type="text" name="nome" class="nome" placeholder="Nome de usuario">
+        <input type="password" name="password" class="password" placeholder="senha">
+        <input type="password" name="password-verification" class="password-verification" placeholder="insira a senha novamente">
+        <button type="button" id="signup-form-button">Criar Conta</button>
     </div>
     <header>
         <div>
